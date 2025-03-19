@@ -1,0 +1,79 @@
+{
+  "forskare": {
+    "namn": {
+      "type": "str",
+      "required": true
+    },
+    "email": {
+      "type": "str",
+      "required": true,
+      "unique": true
+    },
+    "institution": {
+      "type": "str",
+      "required": false
+    },
+    "forskningsområden": {
+      "type": "str",
+      "required": false
+    },
+    "orcid": {
+      "type": "str",
+      "required": false,
+      "unique": true
+    }
+  },
+  "publikationer": {
+    "titel": {
+      "type": "str",
+      "required": true
+    },
+    "författare": {
+      "type": "str",
+      "required": true
+    },
+    "publiceringsår": {
+      "type": "int",
+      "required": true
+    },
+    "journal": {
+      "type": "str",
+      "required": false
+    },
+    "doi": {
+      "type": "str",
+      "required": false,
+      "unique": true
+    },
+    "abstrakt": {
+      "type": "str",
+      "required": false
+    }
+  },
+  "finansiering": {
+    "projekt": {
+      "type": "str",
+      "required": true
+    },
+    "finansiär": {
+      "type": "str",
+      "required": true
+    },
+    "belopp": {
+      "type": "float",
+      "required": true
+    },
+    "startdatum": {
+      "type": "date",
+      "required": true
+    },
+    "slutdatum": {
+      "type": "date",
+      "required": true
+    },
+    "forskare_id": {
+      "type": "int",
+      "required": true
+    }
+  }
+} 
